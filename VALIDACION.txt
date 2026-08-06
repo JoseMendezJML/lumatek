@@ -1,0 +1,5 @@
+Lumatek source validation
+- PHP files checked with php -l: no syntax errors detected.
+- composer.json parsed as valid JSON.
+- Project intentionally excludes vendor/; run composer install.
+- Runtime tests require Composer dependencies and are included under tests/.

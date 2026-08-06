@@ -1,0 +1,39 @@
+LUMATEK - COMANDOS DE INSTALACIÓN
+
+1) Coloca la carpeta en:
+   C:\laragon\www\Lumatek
+
+2) Abre la terminal de Laragon:
+
+   cd C:\laragon\www\Lumatek
+   composer install
+   copy .env.example .env
+   php artisan key:generate
+
+3) Crea la base "lumatek" en HeidiSQL.
+   Puedes ejecutar database\heidisql_create_database.sql
+
+4) Después ejecuta:
+
+   php artisan migrate --seed
+   php artisan optimize:clear
+
+5) Abre:
+   http://lumatek.test
+
+   O ejecuta:
+   php artisan serve
+
+USUARIO ADMINISTRADOR
+Correo: admin@lumatek.test
+Contraseña: Lumatek123!
+
+USUARIO NORMAL
+Correo: usuario@lumatek.test
+Contraseña: Lumatek123!
+
+PARA REINICIAR TODO:
+php artisan migrate:fresh --seed
+
+PARA EJECUTAR PRUEBAS:
+php artisan test
