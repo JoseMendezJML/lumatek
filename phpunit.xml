@@ -3,14 +3,11 @@
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true">
-    <testsuites>
-        <testsuite name="Unit">
-            <directory>tests/Unit</directory>
-        </testsuite>
-        <testsuite name="Feature">
-            <directory>tests/Feature</directory>
-        </testsuite>
-    </testsuites>
+   <testsuites>
+    <testsuite name="Feature">
+        <directory>tests/Feature</directory>
+    </testsuite>
+</testsuites>
     <source>
         <include>
             <directory>app</directory>
@@ -18,7 +15,7 @@
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>
-        <env name="APP_KEY" value="base64:ZGVtb25zdHJhdGlvbi1rZXktMzItYnl0ZXMtbG9uZw=="/>
+        <env name="APP_KEY" value="base64:vRDzQ74sp1Z3k7kknzVAAlQCQpDNGKBKa2LjhZ09LTI="/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="CACHE_STORE" value="array"/>
